@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "DejaVu Sans Mono for Powerline:pixelsize=16:antialias=true:autohint=true";
+static char *font = "DejaVuSansMono Nerd Font Mono:size=12";
 static int borderpx = 2;
 
 /*
@@ -188,6 +188,9 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_V,           clippaste,      {.i =  0} },
 	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
+	{ MODKEY,               XK_l,           copyurl,        {.i =  0} },
+    { TERMMOD,              XK_I,           iso14755,       {.i =  0} },
+    { MODKEY, XK_o, opencopied, {.v = "firefox"} },
 };
 
 /*
